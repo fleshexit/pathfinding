@@ -4,7 +4,8 @@
   "description": "An interactive web application for visualizing pathfinding algorithms and solving mazes in real-time. This project, implemented with HTML, CSS, and JavaScript, allows users to generate mazes, draw custom maps, and select from various pathfinding algorithms for visual exploration.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "keywords": [],
   "author": "",
