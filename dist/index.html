@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Pathfinder</title>
+</head>
+<body>
+    <section class="frame">
+        <div class="content">
+            <div class="sidebar">
+                <button id="clear-btn">Clear</button>
+                <button id="block-btn">Block</button>
+                <button id="eraser-btn">Eraser</button>
+            </div>
+            <div class="grid"></div>
+        </div>
+        <div>
+            <input 
+            type="range" 
+            id="size-slider" 
+            name="size" 
+            min="8" 
+            max="64" 
+            value="16" 
+            />
+        </div>
+    </section>
+    <footer>
+        <a href="https://github.com/fleshexit/pathfinding" target="_blank">
+            <img src="https://github.com/fluidicon.png" alt="github">
+            fleshexit
+        </a>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
