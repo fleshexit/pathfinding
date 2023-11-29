@@ -32,6 +32,33 @@
             />
         </div>
     </section>
+    <dialog class="menu">
+        <div class="menu-content">
+            <h2>Terrain Generation</h2>
+            <form class="menu-form" action="#" method="dialog">
+                <label for="terrain">Terrain</label>
+                <select name="terrain" id="terrain">
+                    <option value="blank">Blank</option> 
+                    <option value="random">Random</option>
+                    <option value="maze">Maze</option>
+                </select>
+                <label for="algorithm">Algorithm</label>
+                <select name="algorithm" id="algorithm">
+                    <option value="astar">A*</option>
+                    <option value="dijkstra">Dijkstra</option>
+                    <option value="greedy">Greedy</option>
+                </select>
+                <label for="startX">Start X Pos</label>
+                <input type="number" name="startX" id="startX" value="0" required>
+                <label for="startY">Start Y Pos</label>
+                <input type="number" name="startY" id="startY" value="0" required>
+                <label for="endX">End X Pos</label>
+                <input type="number" name="endX" id="endX" value="0" required>
+                <label for="endY">End Y Pos</label>
+                <input type="number" name="endY" id="endY" value="0" required>
+                <input id="submit" type="submit" value="Generate">
+            </form>
+        </div>
     <footer>
         <a href="https://github.com/fleshexit/pathfinding" target="_blank">
             <img src="https://github.com/fluidicon.png" alt="github">
