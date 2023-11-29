@@ -10,6 +10,8 @@ function clearGrid() {
     cells.forEach(cell => cell.style.backgroundColor = "white")
 }
 
+// Event Listeners
+
 const clearButton = document.querySelector("#clear-btn");
 clearButton.addEventListener("click", clearGrid);
 
@@ -21,5 +23,9 @@ blockButton.addEventListener("click", () => setColour("black"));
 
 const eraserButton = document.querySelector("#eraser-btn");
 eraserButton.addEventListener("click", () => setColour("white"));
+
+const menu = document.querySelector(".menu");
+const menuButton = document.querySelector("#menu-btn");
+menuButton.addEventListener("click", () => menu.showModal());
 
 populateGrid(16);
