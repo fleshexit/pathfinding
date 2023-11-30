@@ -93,3 +93,39 @@ button:hover {
     display: grid;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+.menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+}
+
+.menu::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu-content > h2 {
+    margin-bottom: 0.5rem;
+}
+
+.menu-content > form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.menu-content > form > span {
+    display: flex;
+    align-items: center;
+}
+
+.menu-content > form > span > label,
+.menu-content > form > span > input {
+    flex: 1;
+}
+
+
+
+
